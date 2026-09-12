@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to Use — Fix Cleaner</title>
+    <meta name="description" content="Simple usage guidance for Fix Floor Cleaner and Fix Bathroom Cleaner.">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/animations.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="index.html" class="brand">FIX<span>.</span></a>
+
+            <nav class="main-nav" id="site-navigation">
+                <a href="index.html">Home</a>
+                <a href="product.html">Products</a>
+                <a href="how-to-use.html" class="active"><b>How to Use</b></a>
+                <a href="faq.html">FAQ</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+
+            <button class="mobile-menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="site-navigation">
+                <span></span><span></span><span></span>
+            </button>
+
+            <button class="cart-button" type="button" onclick="openCart()">
+                Cart <span class="cart-count" id="cart-count">0</span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- ================= PAGE HERO ================= -->
+        <section class="page-hero">
+            <div class="container">
+                <p class="eyebrow">
+                    <big><big>SIMPLE ROUTINE</big></big>
+                </p>
+                <h1>Clean<br><em>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Wipe<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Done</em>
+                </h1>
+                <p class="page-hero-description">
+                    Keep your routine simple and always follow the instructions and precautions printed on the product
+                    label.
+                </p>
+            </div>
+        </section>
+
+        <!-- ================= FOUR STEPS ================= -->
+        <section class="steps-section">
+            <div class="container">
+                <div class="section-intro">
+                    <p class="eyebrow"><big><big>HOW TO USE</big></big></p>
+                    <h2>A simple routine<br>for everyday cleaning.</h2>
+                </div>
+
+                <div class="steps">
+                    <article class="step">
+                        <span>01</span>
+                        <h2>Read</h2>
+                        <p>Read the product label before use and follow the recommended directions for that product.</p>
+                    </article>
+
+                    <article class="step">
+                        <span>02</span>
+                        <h2>Prepare</h2>
+                        <p>Clear the area and use the appropriate amount or dilution specified on the label.</p>
+                    </article>
+
+                    <article class="step">
+                        <span>03</span>
+                        <h2>Clean</h2>
+                        <p>Apply the cleaner to the intended surface and clean using the method recommended on the
+                            label.</p>
+                    </article>
+
+                    <article class="step">
+                        <span>04</span>
+                        <h2>Finish</h2>
+                        <p>Allow the surface to finish as directed. Store the product safely after use.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ================= SAFETY ================= -->
+        <section class="safety-section">
+            <div class="container">
+                <div class="warning-box">
+                    <h2>Before you clean</h2>
+                    <p>
+                        Always read the product label first. Do not mix cleaning products unless the label specifically
+                        says it is safe to do so.
+                    </p>
+                </div>
+
+                <h2>Good cleaning habits</h2>
+                <ul class="safety-list">
+                    <li>Keep cleaning products away from children and pets.</li>
+                    <li>Use only on surfaces for which the product is intended.</li>
+                    <li>Follow the label for dilution, contact time and rinsing instructions.</li>
+                    <li>For a new or delicate surface, test a small inconspicuous area first.</li>
+                    <li>Wash your hands after cleaning and keep the container closed after use.</li>
+                </ul>
+
+                <p class="small-note">
+                    The product label is the final source for product-specific usage, dilution and safety directions.
+                </p>
+            </div>
+        </section>
+
+        <!-- ================= CTA ================= -->
+        <section class="brand-statement">
+            <div class="container statement-grid">
+                <div>
+                    <p class="eyebrow">READY WHEN YOU ARE</p>
+                    <h2>Make clean<br>feel better.</h2>
+                </div>
+                <div class="statement-copy">
+                    <p>Explore the Fix cleaning range and choose the product that fits your routine.</p>
+                    <a href="product.html" class="button button-light">Shop Fix Cleaner</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div>
+                <a href="index.html" class="brand footer-brand">FIX<span>.</span></a>
+            </div>
+
+            <div>
+                <h4>Shop</h4>
+                <a href="product.html">Products</a>
+                <a href="product.html#floor-cleaner">Floor Cleaner</a>
+                <a href="product.html#bathroom-cleaner">Bathroom Cleaner</a>
+            </div>
+
+            <div>
+                <h4>Explore</h4>
+                <a href="how-to-use.html">How to Use</a>
+                <a href="faq.html">FAQ</a>
+            </div>
+
+            <div>
+                <h4>Support</h4>
+                <a href="contact.html">Contact</a>
+                <a href="safety.html">Safety</a>
+            </div>
+        </div>
+
+        <div class="container footer-bottom">
+            <span>© 2026 Fix Cleaner</span>
+            <span>Made for cleaner living.</span>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/cart.js"></script>
+
+    <!-- ================= CART DRAWER ================= -->
+    <div class="cart-overlay" id="cart-overlay" onclick="closeCart()"></div>
+
+    <aside class="cart-drawer" id="cart-drawer" aria-label="Shopping cart">
+        <div class="cart-drawer-header">
+            <div>
+                <span class="eyebrow">YOUR ORDER</span>
+                <h2>Cart</h2>
+            </div>
+            <button type="button" class="cart-close" onclick="closeCart()" aria-label="Close cart">×</button>
+        </div>
+
+        <div class="cart-items" id="cart-items"></div>
+
+        <div class="cart-drawer-footer">
+            <div class="cart-total-row">
+                <span>Total</span>
+                <strong>₹<span id="cart-total">0</span></strong>
+            </div>
+            <a href="checkout.html" class="btn btn-primary cart-checkout">
+                Proceed to Checkout <span>→</span>
+            </a>
+        </div>
+    </aside>
+
+</body>
+
+</html>

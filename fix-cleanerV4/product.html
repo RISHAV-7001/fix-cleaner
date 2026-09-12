@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products — Fix Cleaner</title>
+    <meta name="description" content="Shop Fix Cleaner floor and bathroom cleaning products in multiple sizes.">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/animations.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="index.html" class="brand">FIX<span>.</span></a>
+
+            <nav class="main-nav" id="site-navigation">
+                <a href="index.html">Home</a>
+                <a href="product.html" class="active"><b>Products</b></a>
+                <a href="how-to-use.html">How to Use</a>
+                <a href="faq.html">FAQ</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+
+            <button class="mobile-menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="site-navigation">
+                <span></span><span></span><span></span>
+            </button>
+
+            <button class="cart-button" type="button" onclick="openCart()">
+                Cart
+                <span class="cart-count" id="cart-count">0</span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- =====================================================
+             FLOOR CLEANER
+        ====================================================== -->
+        <section class="product-detail" id="floor-cleaner" data-product-id="floor">
+            <div class="container product-layout">
+
+                <div class="product-detail-image">
+                    <img src="assets/products/floor-cleaner.png" alt="Fix Floor Cleaner">
+                </div>
+
+                <div class="product-detail-content">
+                    <p class="eyebrow">FLOOR CARE</p>
+
+                    <h1>Floor Cleaner</h1>
+
+                    <p class="product-description">
+                        Powerful everyday floor cleaning designed for homes that want
+                        a cleaner, fresher space.
+                    </p>
+
+                    <div class="product-rating">
+                        <span class="stars">★★★★★</span>
+                        <span>Everyday cleaning essential</span>
+                    </div>
+
+                    <div class="product-option-section">
+                        <div class="option-heading">
+                            <h4>Choose your size</h4>
+                            <span data-selected-size-label>3L selected</span>
+                        </div>
+
+                        <div class="size-options">
+                            <button type="button" class="size-option active" data-size="3L" data-price="249">
+                                <strong>3L</strong><span>₹249</span>
+                            </button>
+                            <button type="button" class="size-option" data-size="7L" data-price="499">
+                                <strong>7L</strong><span>₹499</span>
+                            </button>
+                            <button type="button" class="size-option" data-size="15L" data-price="999">
+                                <strong>15L</strong><span>₹999</span>
+                            </button>
+                            <button type="button" class="size-option recommended" data-size="20L" data-price="1299">
+                                <strong>20L</strong><span>₹1,299</span><small>MOST POPULAR</small>
+                            </button>
+                            <button type="button" class="size-option" data-size="25L" data-price="1699">
+                                <strong>25L</strong><span>₹1,699</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="selected-price">₹<span data-selected-price>249</span></div>
+
+                    <div class="purchase-row">
+                        <div class="quantity">
+                            <button type="button" onclick="changeQuantity('floor', -1)"
+                                aria-label="Decrease quantity">−</button>
+                            <span data-quantity>1</span>
+                            <button type="button" onclick="changeQuantity('floor', 1)"
+                                aria-label="Increase quantity">+</button>
+                        </div>
+
+                        <button type="button" class="button button-primary add-product"
+                            onclick="addCurrentProduct('floor')">
+                            Add To Cart
+                        </button>
+                    </div>
+
+                    <div class="purchase-info">
+                        <div><span class="info-icon">✓</span><span>Multiple sizes available</span></div>
+                        <div><span class="info-icon">✓</span><span>Delivery checked by pincode</span></div>
+                        <div><span class="info-icon">✓</span><span>Secure checkout</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- =====================================================
+             BATHROOM CLEANER — SAME PRODUCT EXPERIENCE
+        ====================================================== -->
+        <section class="product-detail" id="bathroom-cleaner" data-product-id="bathroom">
+            <div class="container product-layout">
+
+                <div class="product-detail-image">
+                    <img src="assets/products/bathroom-cleaner.png" alt="Fix Bathroom Cleaner">
+                </div>
+
+                <div class="product-detail-content">
+                    <p class="eyebrow">BATHROOM CARE</p>
+
+                    <h1>Bathroom Cleaner</h1>
+
+                    <p class="product-description">
+                        Powerful everyday bathroom cleaning designed for homes that want
+                        a cleaner, fresher space.
+                    </p>
+
+                    <div class="product-rating">
+                        <span class="stars">★★★★★</span>
+                        <span>Everyday cleaning essential</span>
+                    </div>
+
+                    <div class="product-option-section">
+                        <div class="option-heading">
+                            <h4>Choose your size</h4>
+                            <span data-selected-size-label>3L selected</span>
+                        </div>
+
+                        <div class="size-options">
+                            <button type="button" class="size-option active" data-size="3L" data-price="249">
+                                <strong>3L</strong><span>₹249</span>
+                            </button>
+                            <button type="button" class="size-option" data-size="7L" data-price="499">
+                                <strong>7L</strong><span>₹499</span>
+                            </button>
+                            <button type="button" class="size-option" data-size="15L" data-price="999">
+                                <strong>15L</strong><span>₹999</span>
+                            </button>
+                            <button type="button" class="size-option recommended" data-size="20L" data-price="1299">
+                                <strong>20L</strong><span>₹1,299</span><small>MOST POPULAR</small>
+                            </button>
+                            <button type="button" class="size-option" data-size="25L" data-price="1699">
+                                <strong>25L</strong><span>₹1,699</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="selected-price">₹<span data-selected-price>249</span></div>
+
+                    <div class="purchase-row">
+                        <div class="quantity">
+                            <button type="button" onclick="changeQuantity('bathroom', -1)"
+                                aria-label="Decrease quantity">−</button>
+                            <span data-quantity>1</span>
+                            <button type="button" onclick="changeQuantity('bathroom', 1)"
+                                aria-label="Increase quantity">+</button>
+                        </div>
+
+                        <button type="button" class="button button-primary add-product"
+                            onclick="addCurrentProduct('bathroom')">
+                            Add To Cart
+                        </button>
+                    </div>
+
+                    <div class="purchase-info">
+                        <div><span class="info-icon">✓</span><span>Multiple sizes available</span></div>
+                        <div><span class="info-icon">✓</span><span>Delivery checked by pincode</span></div>
+                        <div><span class="info-icon">✓</span><span>Secure checkout</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- =====================================================
+             PRODUCT INFORMATION
+        ====================================================== -->
+        <section class="specification-section">
+            <div class="container">
+                <div class="section-intro">
+                    <p class="eyebrow">PRODUCT DETAILS</p>
+                    <h2>Built around everyday cleaning.</h2>
+                </div>
+
+                <div class="spec-grid">
+                    <div class="spec-item">
+                        <span>01</span>
+                        <h3>Floor Cleaner</h3>
+                        <p>Fix Floor Cleaner</p>
+                    </div>
+                    <div class="spec-item">
+                        <span>02</span>
+                        <h3>Bathroom Cleaner</h3>
+                        <p>Fix Bathroom Cleaner</p>
+                    </div>
+                    <div class="spec-item">
+                        <span>03</span>
+                        <h3>Available Sizes</h3>
+                        <p>3L · 7L · 15L · 20L · 25L</p>
+                    </div>
+                    <div class="spec-item">
+                        <span>04</span>
+                        <h3>Usage</h3>
+                        <p>Follow the usage instructions provided on the product label.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ================= HOW TO USE PREVIEW ================= -->
+        <section class="brand-statement">
+            <div class="container statement-grid">
+                <div>
+                    <p class="eyebrow">SIMPLE ROUTINE</p>
+                    <h2>Clean.<br>Wipe.<br>Done.</h2>
+                </div>
+                <div class="statement-copy">
+                    <p>
+                        Use Fix Cleaner according to the instructions provided on
+                        the product label.
+                    </p>
+                    <a href="how-to-use.html" class="button button-light">See How to Use</a>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ================= CART DRAWER ================= -->
+        <div class="cart-overlay" id="cart-overlay" onclick="closeCart()"></div>
+
+        <aside class="cart-drawer" id="cart-drawer">
+            <div class="cart-header">
+                <h3>Your Cart</h3>
+                <button type="button" onclick="closeCart()" aria-label="Close cart"><strong>x</strong></button>
+            </div>
+
+            <div id="cart-items"></div>
+
+            <div class="cart-footer">
+                <div class="cart-total">
+                    <span>Total</span>
+                    <strong>₹<span id="cart-total">0</span></strong>
+                </div>
+                <a href="checkout.html" class="button button-primary full-width">Continue to Checkout</a>
+            </div>
+        </aside>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div>
+                <a href="index.html" class="brand footer-brand">FIX<span>.</span></a>
+            </div>
+
+            <div>
+                <h4>Shop</h4>
+                <a href="product.html">Products</a>
+                <a href="product.html#floor-cleaner">Floor Cleaner</a>
+                <a href="product.html#bathroom-cleaner">Bathroom Cleaner</a>
+            </div>
+
+            <div>
+                <h4>Explore</h4>
+                <a href="how-to-use.html">How to Use</a>
+                <a href="faq.html">FAQ</a>
+            </div>
+
+            <div>
+                <h4>Support</h4>
+                <a href="contact.html">Contact</a>
+                <a href="safety.html">Safety</a>
+            </div>
+        </div>
+
+        <div class="container footer-bottom">
+            <span>© 2026 Fix Cleaner</span>
+            <span>Made for cleaner living.</span>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/product.js"></script>
+</body>
+
+</html>
